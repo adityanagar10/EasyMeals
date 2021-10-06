@@ -1,16 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar as ExpoStatusBar} from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import {StatusBar, StyleSheet,View, Text, SafeAreaView,Platform } from 'react-native';
 import SearchBar from './src/components/SearchBar';
 import Feed from './src/components/Feed';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <SearchBar />
+    <>
+    <SafeAreaView style={{flex:1, marginTop: StatusBar.currentHeight}}>
+     <View style={styles.container}>
+     <SearchBar />
       <Feed />
-      <StatusBar style="auto" />
+      <ExpoStatusBar style="auto" />
+     </View>
     </SafeAreaView>
+    </>
   );
 }
 

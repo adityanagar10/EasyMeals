@@ -1,10 +1,11 @@
-import React from 'react'
-import {StyleSheet, Text,View} from 'react-native';
+import React, {useState} from 'react'
+import {StyleSheet, Text,View,SafeAreaView} from 'react-native'
+import { Searchbar } from 'react-native-paper';
 
 export default function SearchBar() {
     return(
         <View style={styles.container}>
-            <Text>hungry?</Text>
+            <Searchbar/>
         </View>
     )
 }
@@ -13,7 +14,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexGrow:0.1,
-        backgroundColor: 'green',
         padding: "2%",
         justifyContent: 'center'
     }

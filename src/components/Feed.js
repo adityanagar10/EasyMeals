@@ -12,7 +12,8 @@ export default function Feed() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexGrow:1,
+        flexGrow:1, 
         backgroundColor: 'blue',
+        padding: "2%",
     }
 })
