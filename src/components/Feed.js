@@ -1,19 +1,19 @@
 import React from 'react'
 import {StyleSheet, Text,View} from 'react-native';
+import styled from 'styled-components';
+
+const FeedContainer = styled(View)`
+    flex: 1;
+    flexGrow:1;
+    backgroundColor: #fff;
+    padding: 2%;
+    color: white;
+`
 
 export default function Feed() {
     return(
-        <View style={styles.container}>
+        <FeedContainer>
             <Text>Feed</Text>
-        </View>
+        </FeedContainer>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexGrow:1, 
-        backgroundColor: 'blue',
-        padding: "2%",
-    }
-})
